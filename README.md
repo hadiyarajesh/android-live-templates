@@ -1,4 +1,4 @@
-# Android Live Tempplates
+# Android Live Templates
 A collection of Live Templates to use in Android Studio
 
 ## Kotlin
@@ -8,8 +8,10 @@ private val _$VAR$ = kotlinx.coroutines.flow.MutableStateFlow<$TYPE$>()
 val $VAR$: kotlinx.coroutines.flow.StateFlow<$TYPE$> get() = _$VAR$
 ```
 
+<br>
+
 ## Jetpack Compose
-1. A composable function with default modifier
+1. Create a composable function with default modifier
 ```kotlin
 @androidx.compose.runtime.Composable
 fun $NAME$(modifier: androidx.compose.ui.Modifier = androidx.compose.ui.Modifier) {
@@ -26,7 +28,7 @@ fun $NAME$() {
 }
 ```
 
-3. A default modifier
+3. Create a default modifier
 ```kotlin
 modifier: androidx.compose.ui.Modifier = androidx.compose.ui.Modifier
 ```
