@@ -33,6 +33,23 @@ fun $NAME$() {
 modifier: androidx.compose.ui.Modifier = androidx.compose.ui.Modifier
 ```
 
+4. Create a Scafold with TopAppBar and a Column
+```kotlin
+androidx.compose.material3.Scaffold(
+    topBar = {
+        androidx.compose.material3.TopAppBar(title = { androidx.compose.material3.Text(text = "$TITLE$") })
+    }
+) { innerPadding ->
+    androidx.compose.foundation.layout.Column(
+        modifier = androidx.compose.ui.Modifier
+            .fillMaxSize()
+            .padding(innerPadding)
+    ) {
+        $END$
+    }
+}
+```
+
 <br>
 
 # File templates
