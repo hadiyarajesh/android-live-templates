@@ -50,6 +50,32 @@ androidx.compose.material3.Scaffold(
 }
 ```
 
+5. Create a Composable Screen with Scaffold, TopAppBar and a Column with sensible default values
+```kotlin
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
+@androidx.compose.runtime.Composable
+fun $FUNCTION$() {
+    androidx.compose.material3.Scaffold(
+        topBar = {
+            androidx.compose.material3.TopAppBar(title = { androidx.compose.material3.Text(text = "$FUNCTION$") })
+        }
+    ) { innerPadding ->
+        androidx.compose.foundation.layout.Column(
+            modifier = androidx.compose.ui.Modifier
+                .fillMaxSize()
+                .padding(innerPadding),
+            verticalArrangement = androidx.compose.foundation.layout.Arrangement.Center,
+            horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally
+        ) {
+            $END$
+        }
+    }
+}
+```
+
 <br>
 
 # File templates
